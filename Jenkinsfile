@@ -20,7 +20,7 @@ pipeline {
                expression {env.BRANCH_NAME == 'master'}
             }                     
             steps {
-             sshagent (credentials: ['secret-text'])                        
+             sshagent (credentials: ['e69309fc-4cf3-48b9-8042-4fbe43d6a597'])                        
                 {
                 script {
                    	sh "git config --add remote.origin.fetch +refs/heads/master:refs/remotes/origin/master"
